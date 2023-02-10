@@ -18,10 +18,9 @@ class Items(Geometry):
         self.entry_4 = customtkinter.CTkEntry(master=self, placeholder_text="Put your key word here")
         self.entry_4.place(relx=ENTRY_X2, rely=ENTRY_Y2)
 
-        self.button1= customtkinter.CTkButton
+        self.button1 = customtkinter.CTkButton(master=self, text="Filter Data by Keyword")
+        self.button1.place(rely=(ENTRY_Y1 + ENTRY_Y2) / 2, relx=0.6)
 
-
-
-app = Items()
-app.mainloop()
+# app = Items()
+# app.mainloop()
 

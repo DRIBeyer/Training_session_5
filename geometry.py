@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import messagebox
 import customtkinter
 from PIL import Image, ImageTk
+import pandas as pd
 
 class Geometry(customtkinter.CTk):
     def __init__(self):
@@ -20,6 +21,7 @@ class Geometry(customtkinter.CTk):
         self.picture_label=customtkinter.CTkLabel(master=self, text="", image=self.background_image)
         self.picture_label.place(x=0, y=0)
 
+        self.df = pd.read_excel("Tweets_2022-08-27.xlsx")
 
 # app = Geometry()
 # app.mainloop()
